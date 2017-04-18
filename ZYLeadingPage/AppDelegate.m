@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZYLeadingPageController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //第一次打开APP 进入引导页
+    ZYLeadingPageController  * leadingPageController = [[ZYLeadingPageController alloc]initWithPageCount:5 setUpCellHander:^(ZYLeadingPageCell *cell, NSIndexPath *indexPath) {
+        //设置图片
+        NSString  * imageName = [NSString stringWithFormat:@"wangyiyun%ld",indexPath.row];
+        [cell.imageView setImage:[UIImage imageNamed:imageName]];
+        
+        //设置按钮
+        [cell.finishBtn setTitle:@"我来看看" forState:normal];
+        [cell.finishBtn setTitleColor:[UIColor redColor] forState:normal];
+    } finishHandler:^(UIButton *finishBtn) {
+        NSLog(@"-----------------点击了完成按钮");
+    }];
+    //自定义属性
+    leadingPageController.pageControl.pageIndicatorTintColor = [UIColor redColor];
+    leadingPageController.pageControl.currentPageIndicatorTintColor = [UIColor purpleColor];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = leadingPageController;
     return YES;
+
 }
 
 

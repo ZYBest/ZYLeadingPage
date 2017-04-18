@@ -15,6 +15,8 @@
 		508869A41EA48B2C00AA49A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508869A21EA48B2C00AA49A9 /* LaunchScreen.storyboard */; };
 		508869AF1EA48B2C00AA49A9 /* ZYLeadingPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 508869AE1EA48B2C00AA49A9 /* ZYLeadingPageTests.m */; };
 		508869BA1EA48B2C00AA49A9 /* ZYLeadingPageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 508869B91EA48B2C00AA49A9 /* ZYLeadingPageUITests.m */; };
+		508869C91EA48B4C00AA49A9 /* ZYLeadingPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508869C81EA48B4C00AA49A9 /* ZYLeadingPageController.m */; };
+		508869CC1EA48B8800AA49A9 /* ZYLeadingPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 508869CB1EA48B8800AA49A9 /* ZYLeadingPageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		508869B51EA48B2C00AA49A9 /* ZYLeadingPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYLeadingPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		508869B91EA48B2C00AA49A9 /* ZYLeadingPageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLeadingPageUITests.m; sourceTree = "<group>"; };
 		508869BB1EA48B2C00AA49A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508869C71EA48B4C00AA49A9 /* ZYLeadingPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLeadingPageController.h; sourceTree = "<group>"; };
+		508869C81EA48B4C00AA49A9 /* ZYLeadingPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLeadingPageController.m; sourceTree = "<group>"; };
+		508869CA1EA48B8800AA49A9 /* ZYLeadingPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLeadingPageCell.h; sourceTree = "<group>"; };
+		508869CB1EA48B8800AA49A9 /* ZYLeadingPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLeadingPageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				508869981EA48B2C00AA49A9 /* AppDelegate.m */,
 				5088699A1EA48B2C00AA49A9 /* ViewController.h */,
 				5088699B1EA48B2C00AA49A9 /* ViewController.m */,
+				508869CA1EA48B8800AA49A9 /* ZYLeadingPageCell.h */,
+				508869CB1EA48B8800AA49A9 /* ZYLeadingPageCell.m */,
+				508869C71EA48B4C00AA49A9 /* ZYLeadingPageController.h */,
+				508869C81EA48B4C00AA49A9 /* ZYLeadingPageController.m */,
 				5088699D1EA48B2C00AA49A9 /* Main.storyboard */,
 				508869A01EA48B2C00AA49A9 /* Assets.xcassets */,
 				508869A21EA48B2C00AA49A9 /* LaunchScreen.storyboard */,
@@ -273,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508869C91EA48B4C00AA49A9 /* ZYLeadingPageController.m in Sources */,
+				508869CC1EA48B8800AA49A9 /* ZYLeadingPageCell.m in Sources */,
 				5088699C1EA48B2C00AA49A9 /* ViewController.m in Sources */,
 				508869991EA48B2C00AA49A9 /* AppDelegate.m in Sources */,
 				508869961EA48B2C00AA49A9 /* main.m in Sources */,
